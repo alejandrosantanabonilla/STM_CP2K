@@ -8,13 +8,15 @@ Content:
 
 In this repository, we can find the following files:
 
-1. **BENZENE-UNPERTURBED-KS_MAT-1_0_28.Log** : Contains the Informtion from a CP2K calculation to obtain a Kohn-Sham Hamiltonian.
+1. **BENZENE-UNPERTURBED-KS_MAT-1_0_28.Log** : Contains the informtion from a CP2K calculation to obtain a Kohn-Sham Hamiltonian.
 
 2. **BENZENE-UNPERTURBED-RESTART.wfn** : Binary file printed by CP2K that contains information from the calculation like eigenvectors, eigenvalues, spin channels, number of molecular orbitals, among others.
 
-3. **eigen_vals_vecs.dat** : Refactored file which contains the eigenvalues and eignevectors in a new formated way, to be post-processed by a Fortran code.
+3. **EIGEN.dat-1_0.MOLog** : Eigenvalues and Eigenvectors printed by CP2K. 
 
-4. **tot_ks.dat**: Refactored KS-Hamiltonian file, which prints the full KS-Hamiltonian in 4 column format.
+4. **eigen_vals_vecs.dat** : Refactored file which contains the eigenvalues and eignevectors in a new formated way, to be post-processed by a Fortran code.
+
+5. **tot_ks.dat**: Refactored KS-Hamiltonian file, which prints the full KS-Hamiltonian in 4 column format.
 
 
 All these results have been obtained using the **python** codes displayed in **source**.
