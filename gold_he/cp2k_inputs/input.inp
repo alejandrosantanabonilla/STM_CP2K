@@ -13,7 +13,7 @@
 @SET SWITCH_LSD             F
 @SET CHARGE                 0
 
-@SET SCF_ADDED_MOS          20
+@SET SCF_ADDED_MOS          -1
 @SET SCF_EPS_SCF            1.0E-8
 @SET SCF_MAX_SCF            2000
 @SET SCF_SCF_GUESS          restart
@@ -124,25 +124,26 @@
      &END POISSON
       
      &PRINT
-!         &mo
-!            eigenvalues $PRINT_MO_EIGENVALUES
-!            eigenvectors $PRINT_MO_EIGENVECTORS
+         &mo
+            eigenvalues 
+	    eigenvectors 
 !            mo_index_range ${PRINT_MO1} ${PRINT_MO2}
 !            occupation_numbers
 !            @if ($PRINT_LMO_FILE == T)
 !            filename =${SYSNAME}.lmo 
 !            @endif
-!            &each
-!               qs_scf 0
-!            &end
-!         &end	
-         &mo_cubes
-            NHOMO ${PRINT_MO_CUBES_NHOMO} 
-            NLUMO ${PRINT_MO_CUBES_NLUMO}
             &each
                qs_scf 0
-            &end         
-         &end
+            &end
+	    FILENAME EIGVEC_EIGVAL
+         &end	
+!         &mo_cubes
+!            NHOMO ${PRINT_MO_CUBES_NHOMO} 
+!            NLUMO ${PRINT_MO_CUBES_NLUMO}
+!            &each
+!               qs_scf 0
+!            &end         
+!         &end
 !         &E_DENSITY_CUBE
 !         &end 
          &ao_matrices
