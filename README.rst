@@ -30,7 +30,7 @@ The following are the tasks to be done to complete the tests:
 
 2. Test the code with a "real" system, namely, Gold surface plus a Helium atom.
 
-3. Create an automatic CP2k template generator for performing calculations
+3. Create an automatic CP2k template generator for performing calculations.
 
 4. Generate test codes for this package.
                                          
