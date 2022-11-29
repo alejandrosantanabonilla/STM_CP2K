@@ -8,4 +8,4 @@ Files:
 
 2. ** .wfn :** Binary file where the wfn coefficients and eigenvalues are stored from a CP2K calculation.
 
-3. ** .Log :** Printed eigenvalues from a CP2K calculation. 
+3. ** .Log :** Printed eigenvalues/KS matrix from a CP2K calculation. 
