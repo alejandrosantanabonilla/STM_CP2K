@@ -20,8 +20,8 @@ In the folder **old_example_benzene** the following files can be found:
 
 
 
-In the folder **slab_grid**, the results of "real" systems can be found. They are divided into He*index* where the *He_*index*_eigenval.dat* 
-and...
+In the folder **grid_z_height**, the results of "real" systems can be found. They are divided into He*index* where the *He_*index*_eigenval.dat* 
+and *He_*index*_ks_tot.dat* store the eigenvalues, eigenvectors and KS-Hamiltoanian.
 
 
 
