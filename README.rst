@@ -6,7 +6,7 @@ Repository for developing a NEGF-STM image code.
 Content:
 ==========
 
-In this repository, we can find the following files:
+In the folder **old_example_benzene** the following files can be found:
 
 1. **BENZENE-UNPERTURBED-KS_MAT-1_0_28.Log** : Contains the informtion from a CP2K calculation to obtain a Kohn-Sham Hamiltonian.
 
@@ -19,7 +19,11 @@ In this repository, we can find the following files:
 5. **tot_ks.dat**: Refactored KS-Hamiltonian file, which prints the full KS-Hamiltonian in 4 column format.
 
 
-All these results have been obtained using the **python** codes displayed in **source**.
+
+In the folder **slab_grid**, the results of "real" systems can be found. They are divided into He*index* where the *He_*index*_eigenval.dat* 
+and...
+
+
 
 To do:
 =========
