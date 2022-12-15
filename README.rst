@@ -28,7 +28,7 @@ The following are the tasks to be done to complete the tests:
 
 1. Pack all the 3 codes in source to make them a python package that can be pip installable. 
 
-2. Test the code with a "real" system, namely, Gold surface plus a Helium atom.
+2. **Test the code with a "real" system, namely, Gold surface plus a Helium atom. (DONE)**
 
 3. Create an automatic CP2k template generator for performing calculations.
 
