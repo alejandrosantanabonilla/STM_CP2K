@@ -6,22 +6,17 @@ Repository for developing a NEGF-STM image code.
 Content:
 ==========
 
-In the folder **examples** the following files can be found:
+In the folder **example** the following files can be found:
 
-1. **BENZENE-UNPERTURBED-KS_MAT-1_0_28.Log** : Contains the informtion from a CP2K calculation to obtain a Kohn-Sham Hamiltonian.
+1. **wfn_gs.py, ks_ham_cp2k.py, *.wfn and .Log**: These files are needed to perform the analysis of the Hamiltonian, Eigenvalues and Eigenvectors.
 
-2. **BENZENE-UNPERTURBED-RESTART.wfn** : Binary file printed by CP2K that contains information from the calculation like eigenvectors, eigenvalues, spin channels, number of molecular orbitals, among others.
+2. **eigen_vals_vecs.dat** : Refactored file which contains the eigenvalues and eignevectors in a new formated way, to be post-processed by a Fortran 
+code.
 
-3. **EIGEN.dat-1_0.MOLog** : Eigenvalues and Eigenvectors printed by CP2K. 
+3. **tot_ks.dat**: Refactored KS-Hamiltonian file, which prints the full KS-Hamiltonian in 4 column format.
 
-4. **eigen_vals_vecs.dat** : Refactored file which contains the eigenvalues and eignevectors in a new formated way, to be post-processed by a Fortran code.
-
-5. **tot_ks.dat**: Refactored KS-Hamiltonian file, which prints the full KS-Hamiltonian in 4 column format.
-
-
-
-In the folder **grid_z_height**, the results of "real" systems can be found. They are divided into He*index* where the *He_*index*_eigenval.dat* 
-and *He_*index*_ks_tot.dat* store the eigenvalues, eigenvectors and KS-Hamiltoanian.
+in the folder **scripts_young** is stored a workflow to be used when grid calculations are automated employing **array** jobs. Also, **scripts_python** 
+stores a copy of the python files used for obtaining the eginevalues, eigenvectors and organised KS Hamiltonian.
 
 
 
@@ -32,9 +27,7 @@ The following are the tasks to be done to complete the tests:
 
 1. Pack all the 3 codes in source to make them a python package that can be pip installable. 
 
-2. **Test the code with a "real" system, namely, Gold surface plus a Helium atom. (DONE)**
+2. Create an automatic CP2k template generator for performing calculations.
 
-3. Create an automatic CP2k template generator for performing calculations.
-
-4. Generate test codes for this package.
+3. Generate test codes for this package.
                                          
